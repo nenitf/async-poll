@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+    >
+    <testsuites>
+        <testsuite name="E2E">
+            <directory suffix="Test.php">./tests/E2E</directory>
+        </testsuite>
+        <testsuite name="Integration">
+            <directory suffix="Test.php">./tests/Integration</directory>
+        </testsuite>
+    </testsuites>
+
+    <logging>
+        <testdoxText outputFile="_reports/README.txt"/>
+        <testdoxHtml outputFile="_reports/index.html"/>
+        <junit outputFile="_reports/phpunit-log.xml"/>
+        <teamcity outputFile="_reports/phpunit-teamcity.txt"/>
+    </logging>
+
+    <coverage cacheDirectory="tests/_reports/cache_coverage"
+          includeUncoveredFiles="true"
+          processUncoveredFiles="true"
+          pathCoverage="false"
+          ignoreDeprecatedCodeUnits="true"
+          disableCodeCoverageIgnore="true">
+        <report>
+            <html outputDirectory="_reports/coverage" lowUpperBound="50" highLowerBound="90"/>
+            <text outputFile="_reports/coverage.txt"/>
+            <clover outputFile="_reports/clover.xml"/>
+        </report>
+
+        <include>
+            <directory suffix=".php">routes</directory>
+            <directory suffix=".php">app/Http</directory>
+            <directory suffix=".php">app/Models</directory>
+            <directory suffix=".php">app/Services</directory>
+        </include>
+    </coverage>
+
+
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="APP_KEY" value="nU9ClNv41WWjjrFPFSkCvujzteHWJ9SN"/>
+        <env name="DB_CONNECTION" value="sqlite"/>
+        <env name="DB_HOST" value="localhost" />
+        <env name="DB_DATABASE" value=":memory:"/>
+        <env name="DB_USERNAME" value="asyncpoll_user"/>
+        <env name="DB_PASSWORD" value="123"/>
+        <env name="CACHE_DRIVER" value="array"/>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+    </php>
+</phpunit>

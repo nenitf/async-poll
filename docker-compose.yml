@@ -1,0 +1,28 @@
+version: "3.3"
+
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=${DB_DATABASE:?err}
+      - POSTGRES_USER=${DB_USERNAME:?err}
+      - POSTGRES_PASSWORD=${DB_PASSWORD:?err}
+    ports:
+      - '5432:5432'
+    expose:
+      - '5432'
+
+  app:
+    build: .docker/php
+    volumes:
+      - ./.docker/apache/vhost.conf:/etc/apache2/sites-available/000-default.conf
+      - .:/var/www/html
+    working_dir: /var/www/html
+    links:
+      - db:db
+    ports:
+      - "${APP_PORT:?err}:80"
+    expose:
+      - "${APP_PORT:?err}"
+    depends_on:
+      - db

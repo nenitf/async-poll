@@ -26,9 +26,8 @@
         }
     },
     "scripts": {
-        "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ]
+        "ci": "phpunit -c phpunit.ci.xml",
+        "test": "phpunit"
     },
     "config": {
         "optimize-autoloader": true,
