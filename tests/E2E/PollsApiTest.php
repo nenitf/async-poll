@@ -64,5 +64,18 @@ class PollsApiTest extends \Tests\TestCase
             ->assertOk()
             ->assertJsonCount(6, 'data');
     }
+
+    public function testExibePorId()
+    {
+        $enquetes = Enquete::factory()->count(3)->create();
+
+        $e = $enquetes[1];
+        $this
+            ->json('GET', self::$ep."/{$e->id}")
+            ->seeJsonStructure(['data' => ['id', 'title']])
+            ->response
+            ->assertOk()
+            ->assertJsonFragment(['title' => $e->titulo]);
+    }
 }
 
