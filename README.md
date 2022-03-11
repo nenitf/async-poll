@@ -17,7 +17,7 @@ Sistema de votação que computa votos de maneira assíncrona
     cp .env.example .env
     ```
 
-2. **Mude o usuário (`DB_USERNAME`), senha (`DB_PASSWORD`) e JWT (`JWT_KEY`) de `.env`**
+2. **Mude o usuário (`DB_USERNAME`) e senha (`DB_PASSWORD`) de `.env`**
 
 3. Crie os containers
     ```sh
