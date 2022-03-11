@@ -11,6 +11,7 @@ use App\Models\Enquete;
 use App\Http\Resources\{
     PollResource,
     OptionResource,
+    PollVotesResource,
 };
 
 class PollController extends Controller
@@ -58,6 +59,26 @@ class PollController extends Controller
     public function show(int $id, Request $r)
     {
         return new PollResource(Enquete::findOrFail($id));
+    }
+
+    /**
+     * @OA\Get(
+     *     tags={"enquete"},
+     *     path="/api/polls/{id}/votes",
+     *     description="Exibição de 1 enquete",
+     *     @OA\Parameter(
+     *         name="id",
+     *         in="path",
+     *         description="Id enquete",
+     *         required=true,
+     *         @OA\Schema(type="integer", example=1),
+     *     ),
+     *     @OA\Response(response="2XX", description="OK"),
+     * )
+     */
+    public function votes(int $id, Request $r)
+    {
+        return new PollVotesResource(Enquete::findOrFail($id));
     }
 
     /**

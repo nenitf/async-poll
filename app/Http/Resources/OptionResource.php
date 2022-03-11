@@ -12,6 +12,7 @@ class OptionResource extends JsonResource
             'id'    => $this->id,
             'name'  => $this->nome,
             'order' => $this->ordem,
+            'votes' => $this->votos,
         ];
     }
 

@@ -71,5 +71,42 @@ class PollsApiTest extends \Tests\TestCase
             ->assertOk()
             ->assertJsonFragment(['title' => $e->titulo]);
     }
+
+    public function testExibeTotaisDeVotosDaEnquete()
+    {
+        $e = Enquete::factory()
+            ->hasOpcoes(3)
+            ->create();
+
+        $e->opcoes[0]->votos()->createMany([[]]);
+        $e->opcoes[1]->votos()->createMany([[], [], []]);
+        $e->opcoes[2]->votos()->createMany([[], []]);
+
+        $res = [
+            'data' => [
+                'id'      => $e->id,
+                'options' => [
+                    [
+                        'option_id' => 1,
+                        'total' => 1,
+                    ],
+                    [
+                        'option_id' => 2,
+                        'total' => 3,
+                    ],
+                    [
+                        'option_id' => 3,
+                        'total' => 2,
+                    ],
+                ],
+            ],
+        ];
+
+        $this
+            ->json('GET', self::$ep."/{$e->id}/votes")
+            ->seeJson($res)
+            ->response
+            ->assertOk();
+    }
 }
 
