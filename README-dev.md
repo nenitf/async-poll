@@ -75,6 +75,11 @@ Documentação de apoio com comandos, dicas e referências.
     ```sh
     docker-compose exec db psql -U asyncpoll_user -d asyncpoll
     ```
+
+- Executar query
+    ```sh
+    docker-compose exec db psql -U asyncpoll_user -d asyncpoll -c "select payload, exception, failed_at from failed_jobs"
+    ```
 ### Comandos do terminal
 
 | Comando| Descrição|
