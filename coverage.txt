@@ -1,0 +1,20 @@
+
+
+Code Coverage Report:    
+  2022-03-11 03:51:16    
+                         
+ Summary:                
+  Classes: 25.00% (2/8)  
+  Methods: 50.00% (7/14) 
+  Lines:   71.67% (43/60)
+
+App\Http\Controllers\PollController
+  Methods: 100.00% ( 4/ 4)   Lines: 100.00% (  9/  9)
+App\Http\Resources\OptionResource
+  Methods:  50.00% ( 1/ 2)   Lines:  90.91% ( 10/ 11)
+App\Http\Resources\PollResource
+  Methods:  50.00% ( 1/ 2)   Lines:  27.27% (  3/ 11)
+App\Models\Enquete
+  Methods: 100.00% ( 1/ 1)   Lines: 100.00% (  1/  1)
+App\Services\CadastroEnquete
+  Methods:   0.00% ( 0/ 1)   Lines:  93.33% ( 14/ 15)

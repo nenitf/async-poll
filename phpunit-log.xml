@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="4" assertions="24" errors="0" warnings="0" failures="0" skipped="0" time="0.311367">
+    <testsuite name="E2E" tests="3" assertions="20" errors="0" warnings="0" failures="0" skipped="0" time="0.271749">
+      <testsuite name="Tests\E2E\PollsApiTest" file="/app/tests/E2E/PollsApiTest.php" tests="3" assertions="20" errors="0" warnings="0" failures="0" skipped="0" time="0.271749">
+        <testcase name="testCria" class="Tests\E2E\PollsApiTest" classname="Tests.E2E.PollsApiTest" file="/app/tests/E2E/PollsApiTest.php" line="22" assertions="9" time="0.146079"/>
+        <testcase name="testLista16Com2Paginas" class="Tests\E2E\PollsApiTest" classname="Tests.E2E.PollsApiTest" file="/app/tests/E2E/PollsApiTest.php" line="49" assertions="6" time="0.083821"/>
+        <testcase name="testExibePorId" class="Tests\E2E\PollsApiTest" classname="Tests.E2E.PollsApiTest" file="/app/tests/E2E/PollsApiTest.php" line="68" assertions="5" time="0.041848"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Integration" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.039618">
+      <testsuite name="Tests\Integration\CadastroEnqueteTest" file="/app/tests/Integration/CadastroEnqueteTest.php" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.039618">
+        <testcase name="testCadastraNovaEnqueteCom2Opcoes" class="Tests\Integration\CadastroEnqueteTest" classname="Tests.Integration.CadastroEnqueteTest" file="/app/tests/Integration/CadastroEnqueteTest.php" line="20" assertions="4" time="0.039618"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

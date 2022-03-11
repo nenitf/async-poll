@@ -1,0 +1,67 @@
+openapi: 3.0.0
+info:
+  title: 'Async poll'
+  version: 0.0.0
+paths:
+  /api/polls:
+    get:
+      tags:
+        - enquete
+      description: 'Listagem de enquetes'
+      operationId: e4db5239e0eb19e763e2e15ef6f94331
+      parameters:
+        -
+          name: page
+          in: query
+          description: Página
+          schema:
+            type: integer
+            example: 1
+      responses:
+        2XX:
+          description: OK
+    post:
+      tags:
+        - enquete
+      description: 'Cadastro de enquete'
+      operationId: bac565a58c6fffe7d835bd6b7bff79a3
+      requestBody:
+        content:
+          application/json;charset=UTF-8:
+            schema:
+              required:
+                - title
+                - options
+              properties:
+                title:
+                  type: string
+                  example: 'Melhor parmegiana de Porto Alegre'
+                options:
+                  type: array
+                  items: { properties: { name: { type: string }, order: { type: integer } }, type: object }
+                  example: [{ name: 'La Osteria', order: '1' }, { name: Clédio, order: '2' }]
+              type: object
+      responses:
+        2XX:
+          description: OK
+  '/api/polls/{id}':
+    get:
+      tags:
+        - enquete
+      description: 'Exibição de 1 enquete'
+      operationId: 931016f70737f860ef1e14c15223c001
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'Id enquete'
+          required: true
+          schema:
+            type: integer
+            example: 1
+      responses:
+        2XX:
+          description: OK
+externalDocs:
+  description: 'Código fonte do projeto'
+  url: 'https://github.com/nenitf/async-poll'
