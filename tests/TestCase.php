@@ -23,6 +23,8 @@ abstract class TestCase extends BaseTestCase
 
     public function select(string $query, bool $dd = false)
     {
+        $query = "select ".$query;
+
         if($dd) {
             dd(DB::select($query));
         }
