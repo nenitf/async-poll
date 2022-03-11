@@ -7,15 +7,15 @@
 
 ##teamcity[testStarted name='testCria' locationHint='php_qn:///app/tests/E2E/PollsApiTest.php::\Tests\E2E\PollsApiTest::testCria' flowId='1']
 
-##teamcity[testFinished name='testCria' duration='159' flowId='1']
+##teamcity[testFinished name='testCria' duration='136' flowId='1']
 
 ##teamcity[testStarted name='testLista16Com2Paginas' locationHint='php_qn:///app/tests/E2E/PollsApiTest.php::\Tests\E2E\PollsApiTest::testLista16Com2Paginas' flowId='1']
 
-##teamcity[testFinished name='testLista16Com2Paginas' duration='95' flowId='1']
+##teamcity[testFinished name='testLista16Com2Paginas' duration='81' flowId='1']
 
 ##teamcity[testStarted name='testExibePorId' locationHint='php_qn:///app/tests/E2E/PollsApiTest.php::\Tests\E2E\PollsApiTest::testExibePorId' flowId='1']
 
-##teamcity[testFinished name='testExibePorId' duration='46' flowId='1']
+##teamcity[testFinished name='testExibePorId' duration='40' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\E2E\PollsApiTest' flowId='1']
 
@@ -27,7 +27,7 @@
 
 ##teamcity[testStarted name='testCadastraNovaEnqueteCom2Opcoes' locationHint='php_qn:///app/tests/Integration/CadastroEnqueteTest.php::\Tests\Integration\CadastroEnqueteTest::testCadastraNovaEnqueteCom2Opcoes' flowId='1']
 
-##teamcity[testFinished name='testCadastraNovaEnqueteCom2Opcoes' duration='46' flowId='1']
+##teamcity[testFinished name='testCadastraNovaEnqueteCom2Opcoes' duration='38' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\Integration\CadastroEnqueteTest' flowId='1']
 
