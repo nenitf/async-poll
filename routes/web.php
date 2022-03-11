@@ -19,6 +19,7 @@ $router->get('/', function () use ($router) {
 
 $router->group(['prefix' => 'api'], function ($request) use ($router) {
     $router->group(['prefix' => 'polls'], function () use ($router) {
+        $router->get('', 'PollController@index');
         $router->post('', 'PollController@store');
     });
 });

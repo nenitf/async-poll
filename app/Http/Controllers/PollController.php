@@ -20,6 +20,27 @@ class PollController extends Controller
     ) {}
 
     /**
+     * @OA\Get(
+     *     tags={"enquete"},
+     *     path="/api/polls",
+     *     description="Listagem de enquetes",
+     *     @OA\Parameter(
+     *         name="page",
+     *         in="query",
+     *         description="Página",
+     *         @OA\Schema(type="integer", example=1),
+     *     ),
+     *     @OA\Response(response="2XX", description="OK"),
+     * )
+     */
+    public function index(Request $r)
+    {
+        return PollResource::collection(
+            Enquete::paginate(10)
+        );
+    }
+
+    /**
      * @OA\Post(
      *     tags={"enquete"},
      *     path="/api/polls",

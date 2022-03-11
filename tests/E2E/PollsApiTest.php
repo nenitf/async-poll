@@ -2,6 +2,8 @@
 
 namespace Tests\E2E;
 
+use App\Models\Enquete;
+
 use Laravel\Lumen\Testing\DatabaseMigrations;
 use Laravel\Lumen\Testing\DatabaseTransactions;
 
@@ -42,6 +44,25 @@ class PollsApiTest extends \Tests\TestCase
             ->assertCreated();
 
         $this->seeInDatabase('enquetes', ['titulo' => $req['title']]);
+    }
+
+    public function testLista16Com2Paginas()
+    {
+        $enquetes = Enquete::factory()->count(16)->create();
+
+        $this
+            ->json('GET', self::$ep)
+            ->seeJsonStructure(['data'])
+            ->response
+            ->assertOk()
+            ->assertJsonCount(10, 'data');
+
+        $this
+            ->json('GET', self::$ep.'?page=2')
+            ->seeJsonStructure(['data'])
+            ->response
+            ->assertOk()
+            ->assertJsonCount(6, 'data');
     }
 }
 
