@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/nenitf/async-poll/actions/workflows/ci.yml/badge.svg)](https://github.com/nenitf/async-poll/actions/workflows/ci.yml) [![coverage](https://raw.githubusercontent.com/nenitf/async-poll/gh-pages/coverage.svg)](https://neni.dev/async-poll/coverage/index.html) [![emojicom](https://img.shields.io/badge/emojicom-%F0%9F%90%9B%20%F0%9F%86%95%20%F0%9F%92%AF%20%F0%9F%91%AE%20%F0%9F%86%98%20%F0%9F%92%A4-%23fff)](http://neni.dev/emojicom)
 
-![Swagger](https://validator.swagger.io/validator?url=https://neni.dev/async-poll/swagger/openapi.yaml)
+[![Swagger](https://validator.swagger.io/validator?url=https://neni.dev/async-poll/swagger/openapi.yaml)](https://neni.dev/async-poll/swagger/index.html?url=https://neni.dev/async-poll/swagger/openapi.yaml) 
 
 Sistema de votação que computa votos de maneira assíncrona
 
