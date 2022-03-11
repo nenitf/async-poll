@@ -12,8 +12,13 @@ class Opcao extends Model
     protected $table = 'opcoes';
     protected $fillable = [ 'nome', 'ordem' ];
 
-    public function Enquete()
+    public function enquete()
     {
-        return $this->belongsTo(Enquete::class, 'id', 'id_enquete');
+        return $this->belongsTo(Enquete::class, 'id_enquete');
+    }
+
+    public function votos()
+    {
+        return $this->hasMany(Voto::class, 'id_opcao');
     }
 }
