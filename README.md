@@ -4,7 +4,9 @@
 
 [![Swagger](https://validator.swagger.io/validator?url=https://neni.dev/async-poll/swagger/openapi.yaml)](https://neni.dev/async-poll/swagger/index.html?url=https://neni.dev/async-poll/swagger/openapi.yaml) 
 
-Sistema de votação que computa votos de maneira assíncrona, [créditos](https://twitter.com/zanfranceschi/status/1501583683685425159) da ideia.
+Sistema de votação que computa votos de maneira assíncrona
+
+[![Tweet](tweet.jpg)](https://twitter.com/zanfranceschi/status/1501583683685425159)
 
 ## Execução local com Docker
 
