@@ -1,13 +1,8 @@
 <?php
 /**
- * @OA\Info(title="Elefanteca", version="0.0.0"),
+ * @OA\Info(title="Async poll", version="0.0.0"),
  * @OA\ExternalDocumentation(
- *     url="https://github.com/nenitf/elefanteca_api",
+ *     url="https://github.com/nenitf/async-poll",
  *     description="Código fonte do projeto",
- * ),
- * @OA\SecurityScheme(
- *     securityScheme="JWT",
- *     type="http",
- *     scheme="bearer"
  * ),
  */

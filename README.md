@@ -33,6 +33,17 @@ Sistema de votação que computa votos de maneira assíncrona, [créditos](https
     docker-compose exec app php artisan key:generate
     ```
 
+6. Crie as tabelas no banco
+    ```sh
+    docker-compose exec app php artisan migrate
+    ```
+    > Use também ``docker-compose exec app php artisan migrate:refresh --seed`` caso queira alguns exemplos
+
+7. Crie a documentação de suporte que ficará disponível em `localhost:8989/swagger`
+    ```sh
+    docker-compose exec app composer swagger
+    ```
+
 ### Execução
 
 Com a **configuração inicial** já realizada, suba os containers se necessário e acesse a aplicação em `localhost:8989`

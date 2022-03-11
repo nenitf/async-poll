@@ -11,7 +11,8 @@
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
         "mockery/mockery": "^1.4.4",
-        "phpunit/phpunit": "^9.5.10"
+        "phpunit/phpunit": "^9.5.10",
+        "zircote/swagger-php": "^3.2"
     },
     "autoload": {
         "psr-4": {
@@ -26,6 +27,7 @@
         }
     },
     "scripts": {
+        "swagger": "openapi --bootstrap ./swagger/consts.php --output ./public/swagger ./swagger/v1.php ./app/Http/Controllers",
         "ci": "phpunit -c phpunit.ci.xml",
         "test": "phpunit"
     },
