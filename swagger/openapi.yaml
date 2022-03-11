@@ -62,6 +62,44 @@ paths:
       responses:
         2XX:
           description: OK
+  '/api/polls/{id}/votes':
+    get:
+      tags:
+        - enquete
+      description: 'Exibição de 1 enquete'
+      operationId: 66958c8e71bbccb23dfbf98b68cedf2b
+      parameters:
+        -
+          name: id
+          in: path
+          description: 'Id enquete'
+          required: true
+          schema:
+            type: integer
+            example: 1
+      responses:
+        2XX:
+          description: OK
+  /api/votes:
+    post:
+      tags:
+        - voto
+      description: 'Cadastro de voto'
+      operationId: 978e285d124467943beb60f1c317b247
+      requestBody:
+        content:
+          application/json;charset=UTF-8:
+            schema:
+              required:
+                - optionId
+              properties:
+                optionId:
+                  type: integer
+                  example: 1
+              type: object
+      responses:
+        2XX:
+          description: OK
 externalDocs:
   description: 'Código fonte do projeto'
   url: 'https://github.com/nenitf/async-poll'

@@ -1,5 +1,5 @@
 
-##teamcity[testCount count='4' flowId='1']
+##teamcity[testCount count='7' flowId='1']
 
 ##teamcity[testSuiteStarted name='E2E' flowId='1']
 
@@ -7,17 +7,29 @@
 
 ##teamcity[testStarted name='testCria' locationHint='php_qn:///app/tests/E2E/PollsApiTest.php::\Tests\E2E\PollsApiTest::testCria' flowId='1']
 
-##teamcity[testFinished name='testCria' duration='136' flowId='1']
+##teamcity[testFinished name='testCria' duration='178' flowId='1']
 
 ##teamcity[testStarted name='testLista16Com2Paginas' locationHint='php_qn:///app/tests/E2E/PollsApiTest.php::\Tests\E2E\PollsApiTest::testLista16Com2Paginas' flowId='1']
 
-##teamcity[testFinished name='testLista16Com2Paginas' duration='81' flowId='1']
+##teamcity[testFinished name='testLista16Com2Paginas' duration='103' flowId='1']
 
 ##teamcity[testStarted name='testExibePorId' locationHint='php_qn:///app/tests/E2E/PollsApiTest.php::\Tests\E2E\PollsApiTest::testExibePorId' flowId='1']
 
-##teamcity[testFinished name='testExibePorId' duration='40' flowId='1']
+##teamcity[testFinished name='testExibePorId' duration='57' flowId='1']
+
+##teamcity[testStarted name='testExibeTotaisDeVotosDaEnquete' locationHint='php_qn:///app/tests/E2E/PollsApiTest.php::\Tests\E2E\PollsApiTest::testExibeTotaisDeVotosDaEnquete' flowId='1']
+
+##teamcity[testFinished name='testExibeTotaisDeVotosDaEnquete' duration='80' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\E2E\PollsApiTest' flowId='1']
+
+##teamcity[testSuiteStarted name='Tests\E2E\VotesApiTest' locationHint='php_qn:///app/tests/E2E/VotesApiTest.php::\Tests\E2E\VotesApiTest' flowId='1']
+
+##teamcity[testStarted name='testCria' locationHint='php_qn:///app/tests/E2E/VotesApiTest.php::\Tests\E2E\VotesApiTest::testCria' flowId='1']
+
+##teamcity[testFinished name='testCria' duration='74' flowId='1']
+
+##teamcity[testSuiteFinished name='Tests\E2E\VotesApiTest' flowId='1']
 
 ##teamcity[testSuiteFinished name='E2E' flowId='1']
 
@@ -27,8 +39,16 @@
 
 ##teamcity[testStarted name='testCadastraNovaEnqueteCom2Opcoes' locationHint='php_qn:///app/tests/Integration/CadastroEnqueteTest.php::\Tests\Integration\CadastroEnqueteTest::testCadastraNovaEnqueteCom2Opcoes' flowId='1']
 
-##teamcity[testFinished name='testCadastraNovaEnqueteCom2Opcoes' duration='38' flowId='1']
+##teamcity[testFinished name='testCadastraNovaEnqueteCom2Opcoes' duration='60' flowId='1']
 
 ##teamcity[testSuiteFinished name='Tests\Integration\CadastroEnqueteTest' flowId='1']
+
+##teamcity[testSuiteStarted name='Tests\Integration\CadastroVotoTest' locationHint='php_qn:///app/tests/Integration/CadastroVotoTest.php::\Tests\Integration\CadastroVotoTest' flowId='1']
+
+##teamcity[testStarted name='testCadastraVoto' locationHint='php_qn:///app/tests/Integration/CadastroVotoTest.php::\Tests\Integration\CadastroVotoTest::testCadastraVoto' flowId='1']
+
+##teamcity[testFinished name='testCadastraVoto' duration='67' flowId='1']
+
+##teamcity[testSuiteFinished name='Tests\Integration\CadastroVotoTest' flowId='1']
 
 ##teamcity[testSuiteFinished name='Integration' flowId='1']
