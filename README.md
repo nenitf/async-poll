@@ -54,6 +54,12 @@ Com a **configuração inicial** já realizada, suba os containers se necessári
 docker-compose up -d
 ```
 
+#### Contagem de votos
+
+```sh
+docker-compose exec app php artisan queue:work
+```
+
 ### Teste
 
 - Individual
