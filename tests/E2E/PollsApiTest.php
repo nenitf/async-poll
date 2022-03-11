@@ -9,8 +9,7 @@ use Laravel\Lumen\Testing\DatabaseTransactions;
 
 class PollsApiTest extends \Tests\TestCase
 {
-    use DatabaseMigrations;
-    use DatabaseTransactions;
+    use DatabaseMigrations, DatabaseTransactions;
 
     private static $ep = '/api/polls';
 

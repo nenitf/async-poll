@@ -9,8 +9,7 @@ use Laravel\Lumen\Testing\DatabaseTransactions;
 
 class CadastroEnqueteTest extends \Tests\TestCase
 {
-    use DatabaseMigrations;
-    use DatabaseTransactions;
+    use DatabaseMigrations, DatabaseTransactions;
 
     private function sut()
     {
@@ -41,13 +40,13 @@ class CadastroEnqueteTest extends \Tests\TestCase
         $this->seeInDatabase('enquetes', ['titulo' => $titulo]);
         $this->seeInDatabase('opcoes', [
             'id_enquete' => $e->id,
-            'nome' => $opcoes[0]['nome'],
-            'ordem' => $opcoes[0]['ordem'],
+            'nome'       => $opcoes[0]['nome'],
+            'ordem'      => $opcoes[0]['ordem'],
         ]);
         $this->seeInDatabase('opcoes', [
             'id_enquete' => $e->id,
-            'nome' => $opcoes[1]['nome'],
-            'ordem' => $opcoes[1]['ordem'],
+            'nome'       => $opcoes[1]['nome'],
+            'ordem'      => $opcoes[1]['ordem'],
         ]);
     }
 }
