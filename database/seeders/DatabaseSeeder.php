@@ -27,6 +27,7 @@ class DatabaseSeeder extends Seeder
                 return ['ordem' => $ordem++];
             })
             ->create();
+
         // $this->call('UsersTableSeeder');
     }
 }
