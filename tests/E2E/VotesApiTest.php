@@ -37,7 +37,7 @@ class VotesApiTest extends \Tests\TestCase
         $this
             ->json('POST', self::$ep, $req)
             ->response
-            ->assertCreated();
+            ->assertStatus(202);
     }
 }
 

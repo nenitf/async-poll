@@ -42,7 +42,7 @@ class VoteController extends Controller
 
         dispatch(new ComputaVotoJob($r->optionId));
 
-        return response('', 201);
+        return response('', 202);
     }
 }
 
