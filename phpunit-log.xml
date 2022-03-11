@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="7" assertions="31" errors="0" warnings="0" failures="0" skipped="0" time="0.734675">
-    <testsuite name="E2E" tests="5" assertions="24" errors="0" warnings="0" failures="0" skipped="0" time="0.584347">
-      <testsuite name="Tests\E2E\PollsApiTest" file="/app/tests/E2E/PollsApiTest.php" tests="4" assertions="22" errors="0" warnings="0" failures="0" skipped="0" time="0.502314">
-        <testcase name="testCria" class="Tests\E2E\PollsApiTest" classname="Tests.E2E.PollsApiTest" file="/app/tests/E2E/PollsApiTest.php" line="16" assertions="9" time="0.208838"/>
-        <testcase name="testLista16Com2Paginas" class="Tests\E2E\PollsApiTest" classname="Tests.E2E.PollsApiTest" file="/app/tests/E2E/PollsApiTest.php" line="43" assertions="6" time="0.131457"/>
-        <testcase name="testExibePorId" class="Tests\E2E\PollsApiTest" classname="Tests.E2E.PollsApiTest" file="/app/tests/E2E/PollsApiTest.php" line="62" assertions="5" time="0.067259"/>
-        <testcase name="testExibeTotaisDeVotosDaEnquete" class="Tests\E2E\PollsApiTest" classname="Tests.E2E.PollsApiTest" file="/app/tests/E2E/PollsApiTest.php" line="75" assertions="2" time="0.094759"/>
+  <testsuite name="" tests="7" assertions="31" errors="0" warnings="0" failures="0" skipped="0" time="0.603053">
+    <testsuite name="E2E" tests="5" assertions="24" errors="0" warnings="0" failures="0" skipped="0" time="0.479280">
+      <testsuite name="Tests\E2E\PollsApiTest" file="/app/tests/E2E/PollsApiTest.php" tests="4" assertions="22" errors="0" warnings="0" failures="0" skipped="0" time="0.412374">
+        <testcase name="testCria" class="Tests\E2E\PollsApiTest" classname="Tests.E2E.PollsApiTest" file="/app/tests/E2E/PollsApiTest.php" line="16" assertions="9" time="0.165686"/>
+        <testcase name="testLista16Com2Paginas" class="Tests\E2E\PollsApiTest" classname="Tests.E2E.PollsApiTest" file="/app/tests/E2E/PollsApiTest.php" line="43" assertions="6" time="0.105517"/>
+        <testcase name="testExibePorId" class="Tests\E2E\PollsApiTest" classname="Tests.E2E.PollsApiTest" file="/app/tests/E2E/PollsApiTest.php" line="62" assertions="5" time="0.068160"/>
+        <testcase name="testExibeTotaisDeVotosDaEnquete" class="Tests\E2E\PollsApiTest" classname="Tests.E2E.PollsApiTest" file="/app/tests/E2E/PollsApiTest.php" line="75" assertions="2" time="0.073011"/>
       </testsuite>
-      <testsuite name="Tests\E2E\VotesApiTest" file="/app/tests/E2E/VotesApiTest.php" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.082033">
-        <testcase name="testCria" class="Tests\E2E\VotesApiTest" classname="Tests.E2E.VotesApiTest" file="/app/tests/E2E/VotesApiTest.php" line="29" assertions="2" time="0.082033"/>
+      <testsuite name="Tests\E2E\VotesApiTest" file="/app/tests/E2E/VotesApiTest.php" tests="1" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.066906">
+        <testcase name="testCria" class="Tests\E2E\VotesApiTest" classname="Tests.E2E.VotesApiTest" file="/app/tests/E2E/VotesApiTest.php" line="29" assertions="2" time="0.066906"/>
       </testsuite>
     </testsuite>
-    <testsuite name="Integration" tests="2" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.150329">
-      <testsuite name="Tests\Integration\CadastroEnqueteTest" file="/app/tests/Integration/CadastroEnqueteTest.php" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.068836">
-        <testcase name="testCadastraNovaEnqueteCom2Opcoes" class="Tests\Integration\CadastroEnqueteTest" classname="Tests.Integration.CadastroEnqueteTest" file="/app/tests/Integration/CadastroEnqueteTest.php" line="19" assertions="4" time="0.068836"/>
+    <testsuite name="Integration" tests="2" assertions="7" errors="0" warnings="0" failures="0" skipped="0" time="0.123773">
+      <testsuite name="Tests\Integration\CadastroEnqueteTest" file="/app/tests/Integration/CadastroEnqueteTest.php" tests="1" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.059329">
+        <testcase name="testCadastraNovaEnqueteCom2Opcoes" class="Tests\Integration\CadastroEnqueteTest" classname="Tests.Integration.CadastroEnqueteTest" file="/app/tests/Integration/CadastroEnqueteTest.php" line="19" assertions="4" time="0.059329"/>
       </testsuite>
-      <testsuite name="Tests\Integration\CadastroVotoTest" file="/app/tests/Integration/CadastroVotoTest.php" tests="1" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.081493">
-        <testcase name="testCadastraVoto" class="Tests\Integration\CadastroVotoTest" classname="Tests.Integration.CadastroVotoTest" file="/app/tests/Integration/CadastroVotoTest.php" line="21" assertions="3" time="0.081493"/>
+      <testsuite name="Tests\Integration\CadastroVotoTest" file="/app/tests/Integration/CadastroVotoTest.php" tests="1" assertions="3" errors="0" warnings="0" failures="0" skipped="0" time="0.064444">
+        <testcase name="testCadastraVoto" class="Tests\Integration\CadastroVotoTest" classname="Tests.Integration.CadastroVotoTest" file="/app/tests/Integration/CadastroVotoTest.php" line="21" assertions="3" time="0.064444"/>
       </testsuite>
     </testsuite>
   </testsuite>

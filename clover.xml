@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1647037161">
-  <project timestamp="1647037161">
+<coverage generated="1647037376">
+  <project timestamp="1647037376">
     <file name="/app/app/Http/Controllers/Controller.php">
       <class name="App\Http\Controllers\Controller" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
