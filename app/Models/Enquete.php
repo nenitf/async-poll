@@ -10,6 +10,7 @@ class Enquete extends Model
     use HasFactory;
 
     protected $table = 'enquetes';
+    protected $fillable = ['titulo'];
 
     public function opcoes()
     {
