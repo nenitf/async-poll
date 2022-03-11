@@ -13,11 +13,6 @@ class PollsApiTest extends \Tests\TestCase
 
     private static $ep = '/api/polls';
 
-    private function sut()
-    {
-        return app()->make(CadastroEnquete::class);
-    }
-
     public function testCria()
     {
         $req = [
