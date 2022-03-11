@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1647037480">
-  <project timestamp="1647037480">
+<coverage generated="1647039970">
+  <project timestamp="1647039970">
     <file name="/app/app/Http/Controllers/Controller.php">
       <class name="App\Http\Controllers\Controller" namespace="global">
         <metrics complexity="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="0" coveredstatements="0" elements="0" coveredelements="0"/>
@@ -43,77 +43,6 @@
       <line num="43" type="stmt" count="1"/>
       <line num="45" type="stmt" count="1"/>
       <metrics loc="49" ncloc="29" classes="1" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="6" coveredelements="6"/>
-    </file>
-    <file name="/app/app/Http/Middleware/Authenticate.php">
-      <class name="App\Http\Middleware\Authenticate" namespace="global">
-        <metrics complexity="3" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
-      </class>
-      <line num="23" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="25" type="stmt" count="0"/>
-      <line num="36" type="method" name="handle" visibility="public" complexity="2" crap="6" count="0"/>
-      <line num="38" type="stmt" count="0"/>
-      <line num="39" type="stmt" count="0"/>
-      <line num="42" type="stmt" count="0"/>
-      <metrics loc="45" ncloc="26" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="0" elements="6" coveredelements="0"/>
-    </file>
-    <file name="/app/app/Http/Middleware/ExampleMiddleware.php">
-      <class name="App\Http\Middleware\ExampleMiddleware" namespace="global">
-        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
-      </class>
-      <line num="16" type="method" name="handle" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="18" type="stmt" count="0"/>
-      <metrics loc="21" ncloc="14" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
-    </file>
-    <file name="/app/app/Http/Resources/OptionResource.php">
-      <class name="App\Http\Resources\OptionResource" namespace="global">
-        <metrics complexity="4" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="11" elements="14" coveredelements="12"/>
-      </class>
-      <line num="9" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="12" type="stmt" count="1"/>
-      <line num="13" type="stmt" count="1"/>
-      <line num="14" type="stmt" count="1"/>
-      <line num="15" type="stmt" count="1"/>
-      <line num="19" type="method" name="translate" visibility="public" complexity="3" crap="3.02" count="1"/>
-      <line num="21" type="stmt" count="1"/>
-      <line num="22" type="stmt" count="1"/>
-      <line num="25" type="stmt" count="1"/>
-      <line num="26" type="stmt" count="1"/>
-      <line num="27" type="stmt" count="1"/>
-      <line num="30" type="stmt" count="1"/>
-      <line num="31" type="stmt" count="0"/>
-      <line num="34" type="stmt" count="1"/>
-      <metrics loc="38" ncloc="38" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="12" coveredstatements="11" elements="14" coveredelements="12"/>
-    </file>
-    <file name="/app/app/Http/Resources/PollResource.php">
-      <class name="App\Http\Resources\PollResource" namespace="global">
-        <metrics complexity="4" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="3" elements="13" coveredelements="4"/>
-      </class>
-      <line num="9" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="3"/>
-      <line num="12" type="stmt" count="3"/>
-      <line num="13" type="stmt" count="3"/>
-      <line num="14" type="stmt" count="3"/>
-      <line num="18" type="method" name="translate" visibility="public" complexity="3" crap="12" count="0"/>
-      <line num="20" type="stmt" count="0"/>
-      <line num="21" type="stmt" count="0"/>
-      <line num="24" type="stmt" count="0"/>
-      <line num="25" type="stmt" count="0"/>
-      <line num="26" type="stmt" count="0"/>
-      <line num="29" type="stmt" count="0"/>
-      <line num="30" type="stmt" count="0"/>
-      <line num="33" type="stmt" count="0"/>
-      <metrics loc="37" ncloc="37" classes="1" methods="2" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="11" coveredstatements="3" elements="13" coveredelements="4"/>
-    </file>
-    <file name="/app/app/Http/Resources/PollVotesResource.php">
-      <class name="App\Http\Resources\PollVotesResource" namespace="global">
-        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
-      </class>
-      <line num="9" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="12" type="stmt" count="1"/>
-      <line num="13" type="stmt" count="1"/>
-      <line num="14" type="stmt" count="1"/>
-      <line num="15" type="stmt" count="1"/>
-      <line num="16" type="stmt" count="1"/>
-      <metrics loc="21" ncloc="21" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="6" coveredelements="6"/>
     </file>
     <file name="/app/app/Models/Enquete.php">
       <class name="App\Models\Enquete" namespace="global">
@@ -192,6 +121,6 @@
       <line num="28" type="stmt" count="7"/>
       <metrics loc="31" ncloc="20" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="9" elements="10" coveredelements="9"/>
     </file>
-    <metrics files="16" loc="571" ncloc="416" classes="12" methods="21" coveredmethods="14" conditionals="0" coveredconditionals="0" statements="79" coveredstatements="62" elements="100" coveredelements="76"/>
+    <metrics files="11" loc="409" ncloc="280" classes="7" methods="13" coveredmethods="11" conditionals="0" coveredconditionals="0" statements="46" coveredstatements="43" elements="59" coveredelements="54"/>
   </project>
 </coverage>
