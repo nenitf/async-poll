@@ -1,5 +1,6 @@
 /vendor
 /.idea
+.docker/psql/postgres-data
 Homestead.json
 Homestead.yaml
 .env

@@ -11,6 +11,8 @@ services:
       - '5432:5432'
     expose:
       - '5432'
+    volumes:
+      - ./.docker/psql/postgres-data:/var/lib/postgresql/data
 
   app:
     build: .docker/php
