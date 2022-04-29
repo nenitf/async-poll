@@ -46,6 +46,11 @@ Sistema de votação que computa votos de maneira assíncrona
     docker-compose exec app composer swagger
     ```
 
+8. Dê as permissões necessárias
+    ```sh
+    docker-compose exec app chmod -R 777 storage
+    ```
+
 ### Execução
 
 Com a **configuração inicial** já realizada, suba os containers se necessário e acesse a aplicação em `localhost:8989`
